@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #0012B5;
+}
+
+.btn {
+  border-radius: 3rem;
+  font-weight: bold;
+}
+
+.btn-light {
+  color: #0012B5;
+}
+.btn-light:hover {
+  color: #0012B5;
+}
+
+.sub-title {
+  color: #0012B5;
+  text-align: center;
+}
+.sub-title::after {
+  content: "";
+  display: block;
+  width: 12rem;
+  height: 2px;
+  background-color: #0012B5;
+  margin: 0.5rem auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content img {
+  height: 3rem;
+}
+.header-content nav {
+  display: flex;
+  align-items: center;
+}
+.header-content a {
+  color: #0012B5;
+}
+.header-content ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+main {
+  padding-top: 5rem;
+}
+
+.banner-section {
+  padding: 5rem 0;
+}
+.banner-section .banner {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  border-radius: 3rem;
+  overflow: hidden;
+  padding: 0;
+  background-color: #0012B5;
+}
+.banner-section .banner .banner-cta {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+}
+.banner-section .banner .banner-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgb(78, 184, 17);
+  background: linear-gradient(90deg, rgb(78, 184, 17) 0%, rgb(18, 188, 131) 100%);
+  color: #0012B5;
+}
+.banner-section .banner .banner-img-container h3 {
+  max-width: 12rem;
+}
+.banner-section .banner .banner-img-container img {
+  max-width: 12rem;
+  height: auto;
+}
+
+.energy-section .bg-light-gray {
+  background-color: #eee;
+  padding: 3rem 0;
+}
+.energy-section .card {
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.energy-section .card .card-body {
+  padding: 2rem;
+}
+
+.benefits-section .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.benefits-section img {
+  max-height: 28rem;
+  width: auto;
+  object-fit: cover;
+}
+
+.topics-section .card {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.topics-section .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topics-section .card-body .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0012B5;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  color: #fff;
+  border-radius: 50%;
+}
+.topics-section .card-body .card-subtitle {
+  color: #0012B5;
+}
+
+/*# sourceMappingURL=style.css.map */
