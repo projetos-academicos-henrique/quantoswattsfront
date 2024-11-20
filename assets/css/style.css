@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  color: #0012B5;
+  color: #5add75;
 }
 
 .container-xl {
@@ -16,19 +16,30 @@ a {
 }
 
 .btn {
-  border-radius: 3rem;
+  border-radius: 0;
   font-weight: bold;
 }
 
 .btn-light {
-  color: #0012B5;
+  color: #5add75;
 }
 .btn-light:hover {
-  color: #0012B5;
+  color: #5add75;
+}
+
+.btn-primary {
+  background-color: #5add75;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #4dbf88;
+}
+.btn-primary:active {
+  background-color: #4dbf88;
 }
 
 .sub-title {
-  color: #0012B5;
+  color: #5add75;
   text-align: center;
   font-weight: bold;
 }
@@ -37,63 +48,41 @@ a {
   display: block;
   width: 12rem;
   height: 2px;
-  background-color: #0012B5;
+  background-color: #5add75;
   margin: 0.5rem auto;
+}
+
+textarea {
+  resize: none;
 }
 
 html {
   font-size: 16px;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  background-color: #fff;
-  width: 100%;
-  z-index: 1000;
+.card {
+  border-radius: 0;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .header-content img {
   height: 3rem;
 }
-.header-content nav {
-  display: flex;
-  align-items: center;
-}
 .header-content a {
-  color: #0012B5;
-}
-.header-content ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
+  color: #5add75;
 }
 
-main {
-  padding-top: 5rem;
-}
-
-.banner-section {
-  padding: 5rem 0;
-}
 .banner-section .banner {
   color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 0.7fr;
-  border-radius: 3rem;
-  overflow: hidden;
+  border-radius: 0;
   padding: 0;
-  background-color: #0012B5;
+}
+.banner-section .banner .row {
+  width: 100%;
 }
 .banner-section .banner .banner-cta {
   padding: 2rem;
   display: flex;
+  background-color: #5add75;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -107,29 +96,26 @@ main {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: rgb(78, 184, 17);
-  background: linear-gradient(90deg, rgb(78, 184, 17) 0%, rgb(18, 188, 131) 100%);
-  color: #0012B5;
+  background: rgb(9, 53, 102);
+  color: #5add75;
 }
 .banner-section .banner .banner-img-container h3 {
   max-width: 12rem;
   font-weight: bold;
 }
-.banner-section .banner .banner-img-container img {
-  max-width: 12rem;
-  height: auto;
-}
 
 .energy-section .bg-light-gray {
   background-color: #eee;
-  padding: 3rem 0;
 }
 .energy-section .card {
-  border-radius: 3rem;
-  overflow: hidden;
+  border-radius: 0;
+  height: 100%;
 }
-.energy-section .card .card-body {
-  padding: 2rem;
+.energy-section .card .badge {
+  background-color: #5add75;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
 }
 
 .benefits-section .col-md-8 {
@@ -142,7 +128,7 @@ main {
   object-fit: cover;
 }
 .benefits-section h3 {
-  color: #0012B5;
+  color: #5add75;
 }
 
 .topics-section {
@@ -154,47 +140,68 @@ main {
 .topics-section .card {
   border: none;
   box-shadow: none;
-  text-align: center;
   background-color: transparent;
+  height: 100%;
 }
-.topics-section .card h3 {
-  font-size: 1rem;
+.topics-section .card .card-body {
+  text-align: center;
+  justify-content: space-between;
 }
 .topics-section .card p {
   font-size: 0.8rem;
 }
-.topics-section .card-body {
+.topics-section .card .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.topics-section .card-body .card-title {
+.topics-section .card .card-body .card-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0012B5;
+  background-color: #5add75;
   width: 3rem;
   aspect-ratio: 1/1;
   color: #fff;
   border-radius: 50%;
 }
-.topics-section .card-body .card-subtitle {
-  color: #0012B5;
+.topics-section .card .card-body .card-subtitle {
+  color: #5add75;
 }
 
 .project-section .bg-gradient-greenblue {
   background: rgb(41, 188, 255);
-  background: linear-gradient(90deg, rgb(41, 188, 255) 0%, rgb(114, 255, 33) 100%);
+  background: linear-gradient(90deg, rgb(9, 53, 102) 0%, rgb(74, 197, 136) 100%);
 }
 .project-section h3 {
   font-size: 1.5rem;
-  color: black;
+  color: #fff;
 }
 .project-section li {
-  color: black;
+  color: #fff;
 }
 .project-section .btn {
-  color: black;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+}
+.project-section .btn:hover {
+  background-color: #fff;
+  color: #5add75;
+}
+.project-section img {
+  width: 100%;
+}
+
+.contact-section {
+  background-image: url("../imgs/sustainableIcon.png");
+  background-repeat: no-repeat;
+  background-position: -10% 120%;
+  background-size: 18rem;
+  background-color: #166086;
+}
+.contact-section label {
+  color: #5add75;
 }
 
 /*# sourceMappingURL=style.css.map */

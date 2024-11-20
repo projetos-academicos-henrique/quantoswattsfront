@@ -10,64 +10,87 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" href="assets/imgs/icon.png" type="image/x-icon" />
   </head>
   <body class="bg-light">
-    <header class="py-3">
-      <div
-        class="container-xl d-flex justify-content-between align-items-center header-content"
-      >
-        <a href="/">
-          <img src="assets/imgs/logo.png" alt="Logo QW" />
-        </a>
-        <nav>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="" class="nav-link">Energia Limpa</a>
-            </li>
-            <li class="nav-item"><a href="" class="nav-link">Beneficios</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Projeto</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
-          </ul>
+    <header class="py-3 bg-white shadow-sm fixed-top">
+      <div class="container-xl header-content">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="/">
+            <img src="assets/imgs/logo.png" alt="Logo QW" class="img-fluid" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Energia Limpa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Benefícios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projeto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main class="pt-5">
       <section class="banner-section py-5 text-white">
-        <div
-          class="container-xl d-flex justify-content-between align-items-center banner"
-        >
-          <div class="banner-cta">
-            <h2>
-              O Futuro é Agora: Junte-se à Revolução da Energia Limpa e
-              Sustentável!
-            </h2>
-            <a href="/" class="btn btn-light mt-3">SAIBA MAIS</a>
-          </div>
-
-          <div class="banner-img-container">
-            <h3>Energia Limpa e Sustentável!</h3>
-            <img src="assets/imgs/banner.png" alt="" />
+        <div class="container-xl banner">
+          <div class="row">
+            <div class="col-md-6 banner-cta">
+              <h2>
+                O Futuro é Agora: Junte-se à Revolução da Energia Limpa e
+                Sustentável!
+              </h2>
+              <a href="#" class="btn btn-light mt-3">SAIBA MAIS</a>
+            </div>
+            <div class="col-md-6 banner-img-container">
+              <img
+                src="assets/imgs/banner.png"
+                alt="Banner"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section class="py-5 energy-section">
         <h2 class="mb-4 sub-title">ENERGIAS LIMPAS</h2>
-        <div class="bg-light-gray">
+        <div class="bg-light-gray py-5">
           <div class="container-xl">
             <div class="row card-group">
               <div class="col-md-4 mb-4">
                 <div class="card">
                   <img
                     src="assets/imgs/hidroeletrica.png"
-                    alt=""
+                    alt="Energia Hidroelétrica"
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <span class="badge bg-success">ENERGIA HIDROELETRICA</span>
+                    <span class="badge">ENERGIA HIDROELÉTRICA</span>
                     <p class="card-text mt-2">
                       A energia hidroelétrica aproveita a força das águas em
                       movimento, como rios e represas, para gerar eletricidade.
@@ -81,11 +104,11 @@
                 <div class="card">
                   <img
                     src="assets/imgs/solar.png"
-                    alt=""
+                    alt="Energia Solar"
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <span class="badge bg-success">ENERGIA SOLAR</span>
+                    <span class="badge">ENERGIA SOLAR</span>
                     <p class="card-text mt-2">
                       A energia solar utiliza a luz do sol captada por painéis
                       fotovoltaicos para gerar eletricidade. É uma fonte
@@ -100,11 +123,11 @@
                 <div class="card">
                   <img
                     src="assets/imgs/eolica.png"
-                    alt=""
+                    alt="Energia Eólica"
                     class="card-img-top"
                   />
                   <div class="card-body">
-                    <span class="badge bg-success">ENERGIA EOLICA</span>
+                    <span class="badge">ENERGIA EÓLICA</span>
                     <p class="card-text mt-2">
                       A energia eólica é gerada a partir do vento, que movimenta
                       turbinas e converte essa força em eletricidade. É uma
@@ -120,20 +143,24 @@
 
       <section class="py-5 bg-light benefits-section">
         <div class="container-xl">
-          <h2 class="mb-4 sub-title">BENEFICIOS</h2>
+          <h2 class="mb-4 sub-title">BENEFÍCIOS</h2>
           <div class="row">
             <div class="col-md-8">
-              <h3>Como Funciona ?</h3>
+              <h3>Como Funciona?</h3>
               <p>
                 O uso de energias limpas, como solar, eólica e hidroelétrica,
                 oferece uma série de vantagens, mas também enfrenta desafios que
                 precisam ser superados para garantir uma transição energética
                 eficiente e sustentável. Aqui estão as principais vantagens e
-                desafios
+                desafios.
               </p>
             </div>
             <div class="col-md-4">
-              <img src="assets/imgs/beneficios.png" alt="" />
+              <img
+                src="assets/imgs/beneficios.png"
+                alt="Benefícios"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -224,53 +251,119 @@
         </div>
       </section>
 
-      <section class="project-section">
+      <section class="project-section pt-5">
         <h2 class="mb-4 sub-title">PROJETO</h2>
-
         <div class="bg-gradient-greenblue py-5">
           <div class="container-xl">
             <div class="row">
-              <div class="col">
+              <div class="col-md-7">
                 <h3 class="mb-5">
                   O SISTEMA É PROJETADO PARA OFERECER GESTÃO EFICIENTE DO
                   CONSUMO DE ENERGIA ELÉTRICA, AJUDANDO AS ORGANIZAÇÕES A
                   IDENTIFICAR DESPERDÍCIOS E OPORTUNIDADES DE OTIMIZAÇÃO.
                 </h3>
-
-                <ul>
-                  <li>
-                    Monitoramento em Tempo Real: Acompanhamento contínuo do
-                    consumo de energia, permitindo a detecção imediata de
-                    irregularidades e picos de demanda.
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    <strong>Monitoramento em Tempo Real:</strong> Acompanhamento
+                    contínuo do consumo de energia, permitindo a detecção
+                    imediata de irregularidades e picos de demanda.
                   </li>
-                  <li>
-                    Relatórios Gerenciais: Geração automática de relatórios que
-                    consolidam dados operacionais e gerenciais, facilitando a
-                    análise e a tomada de decisões.
+                  <li class="mb-3">
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <strong>Relatórios Gerenciais:</strong> Geração automática
+                    de relatórios que consolidam dados operacionais e
+                    gerenciais, facilitando a análise e a tomada de decisões.
                   </li>
-                  <li>
-                    Alertas Personalizados: Notificações via e-mail ou SMS em
-                    caso de desvios no consumo, permitindo ações rápidas para
-                    mitigar desperdícios.
-                  </li>
-                  <li>
-                    Análise Comparativa: Controle das contas de energia e
-                    comparação com as faturas enviadas pelas concessionárias,
-                    ajudando na identificação de discrepâncias e na escolha das
-                    melhores opções tarifárias.
+                  <li class="mb-3">
+                    <i class="bi bi-arrows-angle-expand"></i>
+                    <strong>Análise Comparativa:</strong> Controle das contas de
+                    energia e comparação com as faturas enviadas pelas
+                    concessionárias, ajudando na identificação de discrepâncias
+                    e na escolha das melhores opções tarifárias.
                   </li>
                 </ul>
-
-                <a href="/" class="btn btn-light mt-3">SAIBA MAIS</a>
+                <a href="#" class="btn btn-light mt-3">SAIBA MAIS</a>
               </div>
-
-              <div class="col-md-4">
-                <img src="assets/imgs/project.png" alt="" />
+              <div class="col-md-5">
+                <img
+                  src="assets/imgs/project.png"
+                  alt="Projeto"
+                  class="img-fluid"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="contact-section py-5">
+        <h2 class="mb-4 sub-title">CONTATO</h2>
+        <div class="container-xl d-flex justify-content-center">
+          <div class="card p-4" style="max-width: 600px; width: 100%">
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nome</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Seu nome"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Seu email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensagem</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Sua mensagem"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="py-4 bg-dark text-white">
+      <div
+        class="container-xl d-flex justify-content-between align-items-center"
+      >
+        <p class="mb-0">
+          &copy; 2024 Quantos Watts? Todos os direitos reservados.
+        </p>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Política de Privacidade</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Termos de Uso</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"
+  ></script>
 </html>
