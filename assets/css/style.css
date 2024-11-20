@@ -10,6 +10,11 @@ a {
   color: #0012B5;
 }
 
+.container-xl {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .btn {
   border-radius: 3rem;
   font-weight: bold;
@@ -25,6 +30,7 @@ a {
 .sub-title {
   color: #0012B5;
   text-align: center;
+  font-weight: bold;
 }
 .sub-title::after {
   content: "";
@@ -93,6 +99,9 @@ main {
   justify-content: center;
   gap: 3rem;
 }
+.banner-section .banner .banner-cta h2 {
+  font-weight: bold;
+}
 .banner-section .banner .banner-img-container {
   display: flex;
   justify-content: center;
@@ -104,6 +113,7 @@ main {
 }
 .banner-section .banner .banner-img-container h3 {
   max-width: 12rem;
+  font-weight: bold;
 }
 .banner-section .banner .banner-img-container img {
   max-width: 12rem;
@@ -122,21 +132,36 @@ main {
   padding: 2rem;
 }
 
-.benefits-section .col-md-6 {
+.benefits-section .col-md-8 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .benefits-section img {
-  max-height: 28rem;
-  width: auto;
+  width: 100%;
   object-fit: cover;
 }
+.benefits-section h3 {
+  color: #0012B5;
+}
 
+.topics-section {
+  background-color: #E6FFEB;
+}
+.topics-section .row {
+  justify-content: center;
+}
 .topics-section .card {
   border: none;
   box-shadow: none;
+  text-align: center;
   background-color: transparent;
+}
+.topics-section .card h3 {
+  font-size: 1rem;
+}
+.topics-section .card p {
+  font-size: 0.8rem;
 }
 .topics-section .card-body {
   display: flex;
@@ -148,13 +173,28 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #0012B5;
-  width: 4rem;
+  width: 3rem;
   aspect-ratio: 1/1;
   color: #fff;
   border-radius: 50%;
 }
 .topics-section .card-body .card-subtitle {
   color: #0012B5;
+}
+
+.project-section .bg-gradient-greenblue {
+  background: rgb(41, 188, 255);
+  background: linear-gradient(90deg, rgb(41, 188, 255) 0%, rgb(114, 255, 33) 100%);
+}
+.project-section h3 {
+  font-size: 1.5rem;
+  color: black;
+}
+.project-section li {
+  color: black;
+}
+.project-section .btn {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
